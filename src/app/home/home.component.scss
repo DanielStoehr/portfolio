@@ -1,0 +1,15 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.highlight {
+  color: var(--primary);
+}
+
+img {
+  border-radius: 100%;
+  height: 200px;
+}

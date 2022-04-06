@@ -1,10 +1,13 @@
 <div style="background-color: #131111">
-  <div class="container">
+  <div class="container content">
     <h2>My Skills</h2>
     <div class="skill-container">
-      <div class="skill-item">HTML</div>
-      <div class="skill-item">CSS</div>
-      <div class="skill-item">Javascript</div>
+      <div class="skill-item" *ngFor="let skill of skills">
+        <div>
+          <img src="{{ skill.img }}" alt="image_skill" />
+        </div>
+        <p>{{ skill.title }}</p>
+      </div>
     </div>
   </div>
 </div>

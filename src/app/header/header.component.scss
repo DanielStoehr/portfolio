@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 img {
@@ -16,5 +17,32 @@ a {
 
   &:hover {
     color: var(--primary);
+  }
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.show {
+  display: block !important;
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .show {
+    display: flex !important;
+  }
+
+  #menu-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
   }
 }

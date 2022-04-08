@@ -1,7 +1,7 @@
-<div class="container content">
+<div class="container content" id="my-work">
   <h2>My Work</h2>
   <div class="buttons">
-    <button class="btn btn-secondary active" name="section" (click)="changeSection($event, '')">All</button>
+    <button class="btn btn-secondary active" name="section" (click)="changeSection($event, '')">Alle</button>
     <button class="btn btn-secondary" name="section" (click)="changeSection($event, 'html_css')">HTML/CSS</button>
     <button class="btn btn-secondary" name="section" (click)="changeSection($event, 'javascript')">Javascript</button>
   </div>
@@ -11,7 +11,7 @@
       <div class="project-card-details">
         <h4 class="title">{{ project.title }}</h4>
         <p>{{ project.description }}</p>
-        <a class="btn btn-secondary" href="{{ project.url }}" target="_blank">Try out</a>
+        <a class="btn btn-secondary" href="{{ project.url }}" target="_blank">Ausprobieren</a>
       </div>
     </div>
   </div>

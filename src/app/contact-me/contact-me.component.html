@@ -1,0 +1,18 @@
+<div class="container content" id="contact-me">
+  <h2 class="headline">Contact me.</h2>
+  <p>
+    Kontaktiere mich über das folgende Formular oder schreibe mir eine Email an
+    <a href="mailto:stoehr-daniel@web.de">stoehr-daniel@web.de</a>
+  </p>
+  <form (submit)="submitForm($event)">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Namen eingeben" required />
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Email eingeben" required />
+    <label for="message">Nachricht</label>
+    <textarea id="message" placeholder="Nachricht eingeben" rows="5" required></textarea>
+    <div class="button-container">
+      <button type="submit" class="btn btn-primary" style="width: 100px">Senden</button>
+    </div>
+  </form>
+</div>

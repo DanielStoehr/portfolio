@@ -1,0 +1,38 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.headline {
+  color: var(--secondary);
+}
+
+.content {
+  max-width: 500px;
+}
+
+label,
+input,
+textarea {
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  background-color: var(--grey);
+  border: none;
+  color: #989898;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}

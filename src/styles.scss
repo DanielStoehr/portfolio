@@ -6,6 +6,10 @@
   --black: #000000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--black);
@@ -36,11 +40,13 @@ p {
 }
 
 .btn {
+  display: inline-block;
   background-color: transparent;
   cursor: pointer;
   padding: 16px;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
 
   &:hover,
   &.active {

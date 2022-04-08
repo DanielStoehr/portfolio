@@ -10,9 +10,12 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FooterComponent } from './footer/footer.component';
+import { StartComponent } from './start/start.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, SkillsComponent, MyWorkComponent, AboutMeComponent, ContactMeComponent, FooterComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, SkillsComponent, MyWorkComponent, AboutMeComponent, ContactMeComponent, FooterComponent, StartComponent, ImprintComponent, DataProtectionComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

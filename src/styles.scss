@@ -10,6 +10,7 @@ body {
   font-family: "Inter", sans-serif;
   background-color: var(--black);
   color: white;
+  margin: 0;
 }
 
 h1 {
@@ -28,24 +29,53 @@ p {
 .container {
   max-width: 1000px;
   width: 90%;
-  margin: 32px auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 16px;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover,
+  &.active {
+    color: white;
+  }
+
+  &:disabled {
+    color: white;
+  }
 }
 
 .btn-primary {
   border: 1px solid rgb(45, 252, 216);
   color: rgb(45, 252, 216);
-  background-color: transparent;
-  cursor: pointer;
-  padding: 16px;
-  font-weight: bold;
 
-  &:hover {
-    color: white;
+  &:hover,
+  &.active {
     background-color: rgb(45, 252, 216);
   }
 
   &:disabled {
-    color: white;
     background-color: rgba(45, 252, 216, 0.8);
+  }
+}
+
+.btn-secondary {
+  border: 1px solid #fa2759;
+  color: #fa2759;
+
+  &:hover,
+  &.active {
+    background-color: #fa2759;
+  }
+
+  &:disabled {
+    background-color: rgba(250, 39, 89, 0.8);
   }
 }

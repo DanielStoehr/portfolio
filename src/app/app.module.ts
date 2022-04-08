@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
+import { MyWorkComponent } from './my-work/my-work.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, SkillsComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, SkillsComponent, MyWorkComponent, AboutMeComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

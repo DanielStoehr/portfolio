@@ -1,0 +1,22 @@
+<div style="background-color: var(--grey)">
+  <div class="container content">
+    <div class="header">
+      <img src="assets/img/profile.jpg" alt="image_profile" />
+      <div>
+        <h2>About me.</h2>
+        <p>Ich bin ein zukunftsorientierter Mensch, der die Welt mit neuen Technologien einfacher und besser macht</p>
+      </div>
+    </div>
+    <hr />
+    <div class="journey">
+      <div class="journey-item" *ngFor="let journey of journeys">
+        <div class="journey-item-logo">
+          <img src="/assets/img/{{ journey.image }}" alt="image_journey_item" />
+        </div>
+
+        <h3 class="journey-item-title">{{ journey.title }}</h3>
+        <p class="journey-item-description">{{ journey.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
